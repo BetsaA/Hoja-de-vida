@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Personal</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4ecf4;
+    color: #333;
+}
+
+header {
+    background-color: #04244c; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+}
+
+.left-column {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 2rem;
+}
+
+h1, h2 {
+    color: #333;
+    background-color: #00aaff; /* Azul claro */
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+video {
+    width: 100%;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.skill {
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress-container {
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #e4ecf4;
+    border-radius: 4px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #4caf50;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Alineación a la izquierda */
+.left-column section {
+    text-align: left;
+}
+
+.left-column section p {
+    text-indent: 2em; /* Añade sangría */
+    text-align: justify; /* Alineación justificada */
+}
+
+/* Colores personalizados */
+#datos-personales, #video-virtudes {
+    background-color: #cbe0f3; /* Azul claro */
+}
+
+#estudios, #referencias {
+    background-color: #a6cbe0; /* Azul más claro */
+}
+
+/* Agregar negrita */
+#datos-personales p strong, #referencias p strong {
+    font-weight: bold;
+}
+
+/* Estilos para hacer el diseño más receptivo */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 tabindex="1">Currículum Personal</h1>
+    </header>
+    <main>
+        <div class="left-column">
+            <section id="datos-personales" tabindex="2">
+                <h2 tabindex="3">Datos Personales</h2>
+                <img src="C:\Users\betsy\Downloads\WhatsApp Image 2023-08-04 at 10.23.03.jpeg" alt="Fotografía de [Betsabe]" tabindex="4">
+                <p tabindex="5">Nombre: Betsabe Amaguai</p>
+                <p tabindex="6">Dirección: San Francisco de la Pita y Oe8</p>
+                <p tabindex="7">Teléfono: 0994480944</p>
+                <p tabindex="8">E-mail: betsabe.amaguai@epn.edu.ec</p>
+            </section>
+            
+            <section id="estudios" tabindex="9">
+                <h2 tabindex="10">Perfil</h2>
+                <p tabindex="11" style="text-indent: 2em; text-align: justify;">Estudiante de séptimo semestre en Ingeniería en Software de la Escuela Politécnica Nacional, responsable, con experiencia en creación de páginas con php. Desarrollar ideas nuevas es su hobbie, facilidad para trabajar en equipo y tomar decisiones. Gracias a su formación académica, considera que podrá aportar y seguir desarrollándose profesionalmente.</p>
+            </section>
+
+            <section id="estudios" tabindex="12">
+                <h2 tabindex="13">Estudios</h2>
+                <table>
+                    <tr>
+                        <th>Año</th>
+                        <th>Título</th>
+                        <th>Institución</th>
+                    </tr>
+                    <tr>
+                        <td tabindex="14">2012 - 2018</td>
+                        <td tabindex="15">Bachillerato en Ciencias</td>
+                        <td tabindex="16">Colegio "Verbo"</td>
+                    </tr>
+                    <tr>
+                        <td tabindex="17">2019 - 2022</td>
+                        <td tabindex="18">Terminando la carrera Ingeniería en Software</td>
+                        <td tabindex="19">Escuela Politécnica Nacional</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <div class="right-column">
+            <section id="video-virtudes" tabindex="25">
+                <h2 tabindex="26">Video de Virtudes y Motivación</h2>
+                <div tabindex="27" style="position: relative; padding-bottom: 56.25%; height: 0;">
+                    <iframe tabindex="34" src="https://www.youtube.com/embed/e0JJSt696uk" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                </div>
+            </section>
+            
+            <section class="skills" tabindex="35">
+                <h2 tabindex="36">Habilidades</h2>
+                <div class="skill">
+                    <div class="skill-name">PHP</div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Java</div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Python</div>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section tabindex="37">
+                <h2 tabindex="38">Certificados</h2>
+                <table tabindex="39">
+                    <tr>
+                        <th>Certificado</th>
+                        <th>Otorga</th>
+                        <th>Fecha</th>
+                    </tr>
+                    <tr>
+                        <td>AWS Security Fundamentals (Second Edition)</td>
+                        <td>AWS Training and Certification</td>
+                        <td>Junio 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Getting Started with AWS Security, Identity, and Compliance.</td>
+                        <td>AWS Training and Certification</td>
+                        <td>Junio 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Transformación Digital</td>
+                        <td>Instituto Europeo de Posgrado</td>
+                        <td>Agosto 2022</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Well-Architected</td>
+                        <td>AWS Training and Certification</td>
+                        <td>Agosto 2022</td>
+                    </tr>
+                    <tr>
+                        <td>SCRUM Foundation Professional Certificate SFPC</td>
+                        <td>CertiProf</td>
+                        <td>Mayo 2022</td>
+                    </tr>
+                </table>
+            </section>
+
+ <section id="referencias" tabindex="40">
+                <h2 tabindex="41">Referencias Personales</h2>
+                <p tabindex="42">Nombre: Brandon Ramirez</p>
+                <p tabindex="43">Ocupación: Ingeniero en TI</p>
+                <p tabindex="44">Teléfono: 0994419509</p>
+                <p tabindex="45">Correo electrónico: brandon.ramirez@epn.edu.ec</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+
